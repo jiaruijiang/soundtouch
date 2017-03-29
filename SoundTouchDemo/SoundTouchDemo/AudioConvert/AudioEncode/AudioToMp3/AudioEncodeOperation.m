@@ -57,7 +57,7 @@ outputAudioSampleRate:(int)outputSampleRate
         self.audioSrcPath = path;
         self.audioOutPath = [self createSavePath];
         
-        audioSampleRate = 8000;
+        audioSampleRate = 44100;
         audioOutputSampleRate = 22050;
         audioChannels = 2;
 

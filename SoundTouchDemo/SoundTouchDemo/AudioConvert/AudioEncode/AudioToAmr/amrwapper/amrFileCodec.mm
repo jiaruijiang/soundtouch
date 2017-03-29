@@ -215,7 +215,7 @@ void WriteWAVEFileHeader(FILE* fpwave, int nFrame)
 	memset(&wfx, 0, sizeof(WAVEFORMATX));
 	wfx.nFormatTag = 1;
 	wfx.nChannels = 1; // 单声道
-	wfx.nSamplesPerSec = 8000; // 8khz
+	wfx.nSamplesPerSec = 44100; // 8khz
 	wfx.nAvgBytesPerSec = 16000;
 	wfx.nBlockAlign = 2;
 	wfx.nBitsPerSample = 16; // 16位
@@ -369,7 +369,7 @@ int DecodeAMRFileToWAVEFile(const char* pchAMRFileName, const char* pchWAVEFilen
 		nFrameCount++;
 		fwrite(pcmFrame, sizeof(short), PCM_FRAME_SIZE, fpwave);
 	}
-	NSLog(@"frame = %d", nFrameCount);
+//	NSLog(@"frame = %d", nFrameCount);
 	Decoder_Interface_exit(destate);
 	
 	fclose(fpwave);

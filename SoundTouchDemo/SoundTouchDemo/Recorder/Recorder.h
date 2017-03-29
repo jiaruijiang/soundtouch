@@ -17,7 +17,7 @@
 
 #define DefaultSubPath @"Voice" //默认 二级目录 可以修改自己想要的 例如 "文件夹1/文件夹2/文件夹3"
 
-#define SampleRateKey 8000.0 //采样率
+#define SampleRateKey 44100.0 //采样率
 #define LinearPCMBitDepth 16 //采样位数 默认 16
 #define NumberOfChannels 1  //通道的数目
 

@@ -100,7 +100,7 @@ TDStretch::TDStretch() : FIFOProcessor(&outputBuffer)
     skipFract = 0;
 
     tempo = 1.0f;
-    setParameters(8000, DEFAULT_SEQUENCE_MS, DEFAULT_SEEKWINDOW_MS, DEFAULT_OVERLAP_MS);
+    setParameters(44100, DEFAULT_SEQUENCE_MS, DEFAULT_SEEKWINDOW_MS, DEFAULT_OVERLAP_MS);
     setTempo(1.0f);
 
     clear();

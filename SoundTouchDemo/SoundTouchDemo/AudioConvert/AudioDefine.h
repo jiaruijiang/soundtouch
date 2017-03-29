@@ -11,7 +11,7 @@
 
 #warning 由于使用了苹果的音频解码库 导致 Preprocessor Macros 参数清空 这里手动开启Debug 发布时需要及时改正
 
-#define SOUNDTOUCH_DEBUG 1
+#define SOUNDTOUCH_DEBUG 0
 
 #ifdef SOUNDTOUCH_DEBUG
 #define CNLog(log, ...) NSLog(log, ## __VA_ARGS__)

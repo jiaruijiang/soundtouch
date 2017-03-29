@@ -15,7 +15,8 @@
 
 #define AMR_MAGIC_NUMBER "#!AMR\n"
 
-#define PCM_FRAME_SIZE 160 // 8khz 8000*0.02=160
+//#define PCM_FRAME_SIZE 160 // 8khz 8000*0.02=160
+#define PCM_FRAME_SIZE 882 //44.1khz
 #define MAX_AMR_FRAME_SIZE 32
 #define AMR_FRAME_COUNT_PER_SECOND 50
 
