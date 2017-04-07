@@ -8,7 +8,8 @@
 #import "AudioConvert.h"
 #import "amrFileCodec.h"
 
-const int SoundTouchSampleRate = 44100; //soundTouch 变声处理的 使用的采样率 目的 速度快
+//const int SoundTouchSampleRate = 44100; //soundTouch 变声处理的 使用的采样率 目的 速度快
+const int SoundTouchSampleRate = 8000;
 
 typedef NS_ENUM(NSInteger, AudioConvertType) {
     AudioConvertType_Decode = 110,//解码文件存储

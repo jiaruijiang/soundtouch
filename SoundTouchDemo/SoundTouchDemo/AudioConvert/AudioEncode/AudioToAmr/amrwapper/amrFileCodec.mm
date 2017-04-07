@@ -215,7 +215,8 @@ void WriteWAVEFileHeader(FILE* fpwave, int nFrame)
 	memset(&wfx, 0, sizeof(WAVEFORMATX));
 	wfx.nFormatTag = 1;
 	wfx.nChannels = 1; // 单声道
-	wfx.nSamplesPerSec = 44100; // 8khz
+//	wfx.nSamplesPerSec = 44100; // 8khz
+    wfx.nSamplesPerSec = 8000;
 	wfx.nAvgBytesPerSec = 16000;
 	wfx.nBlockAlign = 2;
 	wfx.nBitsPerSample = 16; // 16位
